@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { useEffect, useState } from "react";
+import MobilePage from "./pages/MobilePage";
+import DesktopPage from "./pages/DesktopPage";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const [isMobile,setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(()=>{
+    const handleSize = ()=>{
+      setIsMobile( window.innerWidth <= 768 );
+    }
+    handleSize();
+    window.addEventListener("resize",handleSize);
+    return ()=>{
+      window.removeEventListener("resize",handleSize);
+    }
+  },[]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div id="app">
+        {
+          isMobile ? <MobilePage /> : <DesktopPage />
+        }
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

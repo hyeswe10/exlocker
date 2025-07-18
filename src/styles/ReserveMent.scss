@@ -1,0 +1,41 @@
+.reserve-ment{
+  p{
+    font-size: 1.2rem;
+    &.last-p{
+      font-size: 1rem;
+    }
+  }
+  .big-p{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: $color-gray;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  ul{
+    margin: 3rem 1rem;
+    li{
+      list-style: disc;
+      
+    }
+  }
+  .agree-check{
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    input{
+      width: 20px;
+      height: 20px;
+    }
+    label{
+      font-size: 1.2rem
+    }
+  }
+  button{
+    @include round-btn();
+  }
+}

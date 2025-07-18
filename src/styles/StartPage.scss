@@ -1,0 +1,26 @@
+.start-page{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
+  svg{
+    transform: scale(12);
+  }
+  .start-ment{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+  }
+  .start-footer{
+    width: 100%;
+  }
+  button{
+    @include round-btn();
+    margin-bottom: 3rem;
+  }
+}

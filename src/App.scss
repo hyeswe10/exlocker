@@ -1,0 +1,16 @@
+@import './styles/global.scss';
+
+#app{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #mobile-page{
+    width: 412px;
+    height: 80vh;
+    max-height: 917px;  
+    max-width: 412px;    
+    border: 1px solid #222;  
+    border-radius: 1rem;
+  }
+}

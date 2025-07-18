@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css");
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./StartPage.scss";
+@import "./Login.scss";
+@import "./LockerMap.scss";
+@import "./ReserveMent.scss";
+@import "./Reserves.scss";
+@import "./ResultReserve.scss";
+@import "./AgreeMent.scss";
+@import "./SignUp.scss";
+@import "./MyPage.scss";
+@import "./MyReserve.scss";
+@import "./CancelPage.scss";
+@import "./OkCancel.scss";
+
+body{
+  font-family: "Paperlogy";
+}
+#mobile-page{
+  padding: 20px;
+}
+button{
+  font-family: 'Paperlogy';
+}

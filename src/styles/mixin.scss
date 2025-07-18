@@ -1,0 +1,17 @@
+@mixin round-btn($bg-color:$color-black, $text-color:$color-white, $hover:#444){
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  outline: none;
+  border: none;
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  &:hover{
+    background-color: $hover;
+  }
+}

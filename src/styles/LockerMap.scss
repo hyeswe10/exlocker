@@ -1,0 +1,49 @@
+.locker-map{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  h2{
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .floor-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    button{
+      @include round-btn();
+    }
+  }
+  .locker-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    .locker-item{
+      margin: 0 auto;
+      padding: 10px 0;
+      width: 40px;
+      height: 40px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: $color-white;
+    }
+    .isActive{
+      background-color: $color-black;
+    }
+    .isReserved{
+      background-color: $color-gray;
+    }
+    .mySelect{
+      background-color: $color-blue;
+    }
+    .myReserved{
+      background-color: $color-purple;
+    }
+  }
+  .btn-reserv{
+    @include round-btn();
+  }
+}
