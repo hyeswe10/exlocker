@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchSignUp } from "../utils/LockerApi";
 import { useNavigate } from "react-router-dom";
 
-const SignUp = () => {
+const MemberShip = () => {
     const navigate = useNavigate();
     const [userId,setUserId] = useState('');
     const [pass,setPass] = useState('');
@@ -74,4 +74,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default MemberShip;

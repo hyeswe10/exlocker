@@ -15,12 +15,17 @@
 @import "./CancelPage.scss";
 @import "./OkCancel.scss";
 
+//desktop
+@import "./DeskMemberShip.scss";
+@import "./DeskLockerMap.scss";
+
 body{
   font-family: "Paperlogy";
 }
 #mobile-page{
   padding: 20px;
 }
-button{
+button,
+input{
   font-family: 'Paperlogy';
 }

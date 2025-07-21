@@ -1,0 +1,27 @@
+.locker-left{
+    .locker-grid{
+        .locker-item{
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: $color-white;
+        }
+        .isActive{
+        background-color: $color-black;
+        }
+        .isReserved{
+            background-color: $color-gray;
+            pointer-events: none;
+        }
+        .mySelect{
+            background-color: $color-blue;
+        }
+        .myReserved{
+            background-color: $color-purple;
+        }
+    }
+}

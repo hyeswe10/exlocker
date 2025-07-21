@@ -10,8 +10,8 @@ import MyPage from "../components/MyPage";
 import MyReserve from "../components/MyReserve";
 import CancelPage from "../components/CancelPage";
 import OkCancel from "../components/OkCancel";
-import SignUp from "../components/SignUp";
 import AgreeMent from "../components/AgreeMent";
+import MemberShip from "../components/MemberShip";
 
 const MobilePage = () => { 
   const navigate = useNavigate(); 
@@ -31,7 +31,7 @@ const MobilePage = () => {
         <Route path="/" element={<StartPage />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/agreement" element={<AgreeMent/>}/>
-        <Route path="/signUp" element={<SignUp/>}/>
+        <Route path="/memberShip" element={<MemberShip/>}/>
         <Route path="/lockerMap" element={<LockerMap onSelect={handleMyReserve}/>}/>
         <Route path="/reserveMent" element={<ReserveMent />} />
         <Route path="/reserves" element={<Reserves myReserve={myReserve}/>} />
